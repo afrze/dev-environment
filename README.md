@@ -2,9 +2,10 @@
 
 This repository contains all the development environment setting, color themes, terminal setups, code editor setups etc.
 
-## For Mac
+<details>
+<summary>Terminal setup for Mac</summary>
 
-### Homebrew Setup
+**Homebrew Setup**
 
 **Install Homebrew**
 Run this command
@@ -102,3 +103,64 @@ Load these new plugins by running:
 ```bash
 source ~/.zshrc
 ```
+
+</details>
+
+<details>
+<summary>Terminal setup for Linux</summary>
+
+**Install zsh**
+
+*For Fedora*
+
+1. Install Zsh: You can install Zsh using the following command in the terminal:
+
+```bash
+sudo dnf install zsh
+```
+
+2.Verify Installation: After installation, verify the version of Zsh by running the following command:
+
+```bash
+zsh --version
+```
+
+Set Zsh as Default Shell: To make Zsh your default shell, use the `chsh` command with the -s flag followed by the path to the Zsh executable. Run the following command:
+
+```bash
+chsh -s $(which zsh)
+```
+
+Confirm Default Shell Change: To confirm that Zsh is now your default shell, run the following command:
+
+```bash
+echo $SHELL
+```
+
+The output should be `/usr/bin/zsh`
+
+**Install `oh-my-zsh`**
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+**Install PowerLevel10K**
+
+```bash
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+Now that it’s installed, open the ~/.zshrc file with your preferred editor and change the value of ZSH_THEME as shown below:
+
+```bash
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+To reflect this change on your terminal, restart it or run this command:
+
+```bash
+source ~/.zshrc
+```
+
+</details>
