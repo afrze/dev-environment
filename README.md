@@ -164,3 +164,9 @@ source ~/.zshrc
 ```
 
 </details>
+
+<details>
+<summary>Terminal setup for Windows</summary>
+
+- Everything is setup using [oh-my-posh](https://ohmyposh.dev/)
+</details>
