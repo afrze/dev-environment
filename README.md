@@ -168,5 +168,21 @@ source ~/.zshrc
 <details>
 <summary>Terminal setup for Windows</summary>
 
-- Everything is setup using [oh-my-posh](https://ohmyposh.dev/)
+**Follow these steps**
+
+- Make sure you have `Windows terminal`.
+- In terminal settings > Appearance > Turn on use acrylic material in tab row.
+- Set schemes > [Windows terminal themes](https://windowsterminalthemes.dev/) > Select `Dracula` 
+- Download FiraCode Nerd Fonts > [All font](https://github.com/ryanoasis/nerd-fonts/)
+- Make sure you have `winget` in powershell. Install [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
+- `winget install JanDeDobbeleer.OhMyPosh -s winget`
+- Add path to Oh My Posh `$env:Path += ";C:\Users\user\AppData\Local\Programs\oh-my-posh\bin"`
+- To update run `winget upgrade JanDeDobbeleer.OhMyPosh -s winget`
+- To get themes `Get-PoshThemes`
+- Run `oh-my-posh init pwsh --config 'C:\Users\zubae\AppData\Local\Programs\oh-my-posh\themes\easy-term.omp.json' | Invoke-Expression`
+- To persist the powersell settings run `New-Item -Path $PROFILE -Type File -Force`
+- Open powershell profile using `notepad $PROFILE`
+- Add this line to the profile `oh-my-posh init pwsh --config 'C:\Users\zubae\AppData\Local\Programs\oh-my-posh\themes\easy-term.omp.json' | Invoke-Expression` save and exit. 
+- Restart your terminal
+
 </details>
