@@ -186,3 +186,9 @@ source ~/.zshrc
 - Restart your terminal
 
 </details>
+
+### Screenshots
+
+**Windows**
+![image](https://github.com/afrze/dev-environment/assets/86748499/ff0d7aff-bb0a-4ab2-81c6-1b23fc41a0be)
+
