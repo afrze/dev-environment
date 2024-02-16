@@ -192,3 +192,5 @@ source ~/.zshrc
 **Windows**
 ![image](https://github.com/afrze/dev-environment/assets/86748499/ff0d7aff-bb0a-4ab2-81c6-1b23fc41a0be)
 
+**Mac**
+![image](https://github.com/afrze/dev-environment/assets/86748499/7cb3a07a-bf6a-44ad-8905-a0c044b31785)
