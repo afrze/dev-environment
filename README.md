@@ -2,6 +2,8 @@
 
 This repository contains all the development environment setting, color themes, terminal setups, code editor setups etc.
 
+This setup uses `tmux`, `neovim`, `lazy-vim`
+
 <details>
 <summary>Terminal setup for Mac</summary>
 
@@ -187,10 +189,96 @@ source ~/.zshrc
 
 </details>
 
-### Screenshots
+## Vim Setup
 
-**Windows**
+**Pre Requisites**
+- [Ripgrep](https://github.com/BurntSushi/ripgrep)
+  ```sh
+  brew install ripgrep
+  ```
+
+- [Node](https://nodejs.org/en/) and [Npm](https://nodejs.org/en/) - Recommended to install using nvm
+
+**Neo Vim Configuration Rundown**
+
+- Neo Vim configuration will be located in the home directory `~/.config/nvim`. 
+- Uses `lua` for customizations
+- Looks for `init.lua` file while Neo Vim starts
+
+**Neo Vim Keymaps**
+
+`j` `k` - `INSET MODE`  To exit out of insert mode
+
+`space` `s` `v` - `CMD MODE` - To split window vertically 
+`space` `s` `h` - `CMD MODE` - To split window horizontally
+`space` `s` `m` - `CMD MODE` - To maximize the selected window
+`space` `s` `e` - `CMD MODE` - To reset windows evenly after resizing the window manually
+`space` `s` `x` - `CMD MODE` - To close the current active window
+
+`space` `t` `o` - `CMD MODE` - To open a new tab
+`space` `t` `p` - `CMD MODE` - To got to previous tab
+`space` `t` `n` - `CMD MODE` - To go to next tab
+`space` `t` `x` - `CMD MODE` - To close the current tab
+`space` `t` `f` - `CMD MODE` - To open existing file in a new tab
+
+`space` `e` `e` - `CMD MODE` - To open / close file explorer
+`space` `e` `f` - `CMD MODE` - To open file explorer pointing current open window
+`space` `e` `c` - `CMD MODE` - To collapse all open file / folders
+`space` `e` `r` - `CMD MODE` - To reload file explorer
+
+`space` `f` `f` - `CMD MODE` - To open fuzzy find menu and search for files
+`space` `f` `r` - `CMD MODE` - To search for recent files
+`space` `f` `s` - `CMD MODE` - To find a string in files
+`space` `f` `c` - `CMD MODE` - To the string under the cursor
+`space` `f` `t` - `CMD MODE` - To find todo
+
+`ctrl` `o` - `CMD MODE` - To jump next window opened using telescope
+`ctrl` `i` - `CMD MODE` - To jump previous window opened using telescope
+
+
+`ctrl` `c` - `POPUP` - To close popup
+`ctrl` `k` - `POPUP` - To select previous file
+`ctrl` `j` - `POPUP` - To select next file
+`ctrl` `q` - `POPUP` - To send selected files to quick fix
+
+`space` `w` `s` - `CMD MODE` - To save a session manually
+`space` `w` `r` - `CMD MODE` - To restore a previously saved session
+
+`ctrl` `space` - `CMD MODE` - To select the node
+`ctrl` `backspace` - `CMD MODE` - To go back a selection
+
+`ctrl` `j` - `CMD MODE` - To cycle next code completion suggestions
+`ctrl` `k` - `CMD MODE` - To cycle back code completion suggestions
+`ctrl` `b` - `CMD MODE` - To scroll down the docs
+`ctrl` `f` - `CMD MODE` - To scroll up the docs
+`ctrl` `e` - `CMD MODE` - To abort
+`ctrl` `space` - `CMD MODE` - To open suggestions
+
+`g` `c` - `CMD MODE` - Use this with conjunction to vim motions to comment / uncomment the sections 
+
+`s` - `CMD MODE` - To substitute yanked word with motion
+`s` `s` - `CMD MODE` - To substitute yanked word to the line
+`s` `S` - `CMD MODE` - To substitute yanked word to end of the line
+`x` `s` - `CMD MODE` - To substitute yanked word in visual mode
+
+`y` `s` - `CMD MODE` - To start the surround functionality which can be used with motions
+`c` `s` = `CMD MODE` - To change already surrounded word with different char
+
+`space` `h` `b` = `CMD MODE` - To view git blame
+`space` `h` `b` = `CMD MODE` - To view git blame inline
+
+## Screenshots
+
+<details>
+<summary>Windows</summary>
+
 ![image](https://github.com/afrze/dev-environment/assets/86748499/ff0d7aff-bb0a-4ab2-81c6-1b23fc41a0be)
 
-**Mac**
+</details>
+
+<details>
+<summary>Mac</summary>
+
 ![image](https://github.com/afrze/dev-environment/assets/86748499/7cb3a07a-bf6a-44ad-8905-a0c044b31785)
+
+</details>
