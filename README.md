@@ -207,65 +207,78 @@ source ~/.zshrc
 
 **Neo Vim Keymaps**
 
-`j` `k` - `INSET MODE`  To exit out of insert mode
+*General*
+- `j` `k` - `INSET MODE`  To exit out of insert mode.
 
-`space` `s` `v` - `CMD MODE` - To split window vertically 
-`space` `s` `h` - `CMD MODE` - To split window horizontally
-`space` `s` `m` - `CMD MODE` - To maximize the selected window
-`space` `s` `e` - `CMD MODE` - To reset windows evenly after resizing the window manually
-`space` `s` `x` - `CMD MODE` - To close the current active window
+*Window Split*
+- `space` `s` `v` - `CMD MODE` - To split window vertically.
+- `space` `s` `h` - `CMD MODE` - To split window horizontally.
+- `space` `s` `m` - `CMD MODE` - To maximize the selected window.
+- `space` `s` `e` - `CMD MODE` - To reset windows evenly. after resizing the window manually.
+- `space` `s` `x` - `CMD MODE` - To close the current active window.
 
-`space` `t` `o` - `CMD MODE` - To open a new tab
-`space` `t` `p` - `CMD MODE` - To got to previous tab
-`space` `t` `n` - `CMD MODE` - To go to next tab
-`space` `t` `x` - `CMD MODE` - To close the current tab
-`space` `t` `f` - `CMD MODE` - To open existing file in a new tab
+*Tabs*
+- `space` `t` `o` - `CMD MODE` - To open a new tab.
+- `space` `t` `p` - `CMD MODE` - To got to previous tab.
+- `space` `t` `n` - `CMD MODE` - To go to next tab.
+- `space` `t` `x` - `CMD MODE` - To close the current tab.
+- `space` `t` `f` - `CMD MODE` - To open existing file in a new tab.
 
-`space` `e` `e` - `CMD MODE` - To open / close file explorer
-`space` `e` `f` - `CMD MODE` - To open file explorer pointing current open window
-`space` `e` `c` - `CMD MODE` - To collapse all open file / folders
-`space` `e` `r` - `CMD MODE` - To reload file explorer
+*Telescope*
+- `space` `e` `e` - `CMD MODE` - To open / close file explorer.
+- `space` `e` `f` - `CMD MODE` - To open file explorer pointing current open window.
+- `space` `e` `c` - `CMD MODE` - To collapse all open file / folders.
+- `space` `e` `r` - `CMD MODE` - To reload file explorer.
 
-`space` `f` `f` - `CMD MODE` - To open fuzzy find menu and search for files
-`space` `f` `r` - `CMD MODE` - To search for recent files
-`space` `f` `s` - `CMD MODE` - To find a string in files
-`space` `f` `c` - `CMD MODE` - To the string under the cursor
-`space` `f` `t` - `CMD MODE` - To find todo
+*Fuzzy Find*
+- `space` `f` `f` - `CMD MODE` - To open fuzzy find menu and search for files.
+- `space` `f` `r` - `CMD MODE` - To search for recent files.
+- `space` `f` `s` - `CMD MODE` - To find a string in files.
+- `space` `f` `c` - `CMD MODE` - To the string under the cursor.
+- `space` `f` `t` - `CMD MODE` - To find todo.
 
-`ctrl` `o` - `CMD MODE` - To jump next window opened using telescope
-`ctrl` `i` - `CMD MODE` - To jump previous window opened using telescope
+*Telescope Jumps*
+- `ctrl` `o` - `CMD MODE` - To jump next window opened using telescope.
+- `ctrl` `i` - `CMD MODE` - To jump previous window opened using telescope.
 
+*Telescope Extended*
+- `ctrl` `c` - `POPUP` - To close popup.
+- `ctrl` `k` - `POPUP` - To select previous file.
+- `ctrl` `j` - `POPUP` - To select next file.
+- `ctrl` `q` - `POPUP` - To send selected files to quick fix.
 
-`ctrl` `c` - `POPUP` - To close popup
-`ctrl` `k` - `POPUP` - To select previous file
-`ctrl` `j` - `POPUP` - To select next file
-`ctrl` `q` - `POPUP` - To send selected files to quick fix
+*Sessions*
+- `space` `w` `s` - `CMD MODE` - To save a session manually.
+- `space` `w` `r` - `CMD MODE` - To restore a previously saved session.
 
-`space` `w` `s` - `CMD MODE` - To save a session manually
-`space` `w` `r` - `CMD MODE` - To restore a previously saved session
+*Block Jump*
+- `ctrl` `space` - `CMD MODE` - To select the node.
+- `ctrl` `backspace` - `CMD MODE` - To go back a selection.
 
-`ctrl` `space` - `CMD MODE` - To select the node
-`ctrl` `backspace` - `CMD MODE` - To go back a selection
+*LSP*
+- `ctrl` `j` - `CMD MODE` - To cycle next code completion suggestions.
+- `ctrl` `k` - `CMD MODE` - To cycle back code completion suggestions.
+- `ctrl` `b` - `CMD MODE` - To scroll down the docs.
+- `ctrl` `f` - `CMD MODE` - To scroll up the docs.
+- `ctrl` `e` - `CMD MODE` - To abort.
+- `ctrl` `space` - `CMD MODE` - To open suggestions.
 
-`ctrl` `j` - `CMD MODE` - To cycle next code completion suggestions
-`ctrl` `k` - `CMD MODE` - To cycle back code completion suggestions
-`ctrl` `b` - `CMD MODE` - To scroll down the docs
-`ctrl` `f` - `CMD MODE` - To scroll up the docs
-`ctrl` `e` - `CMD MODE` - To abort
-`ctrl` `space` - `CMD MODE` - To open suggestions
+*Comments*
+- `g` `c` - `CMD MODE` - Use this with conjunction to vim motions to comment / uncomment the sections. 
 
-`g` `c` - `CMD MODE` - Use this with conjunction to vim motions to comment / uncomment the sections 
+*Substitute*
+- `s` - `CMD MODE` - To substitute yanked word with motion.
+- `s` `s` - `CMD MODE` - To substitute yanked word to the line.
+- `s` `S` - `CMD MODE` - To substitute yanked word to end of. the line.
+- `x` `s` - `CMD MODE` - To substitute yanked word in visual mode.
 
-`s` - `CMD MODE` - To substitute yanked word with motion
-`s` `s` - `CMD MODE` - To substitute yanked word to the line
-`s` `S` - `CMD MODE` - To substitute yanked word to end of the line
-`x` `s` - `CMD MODE` - To substitute yanked word in visual mode
+*Word wrap*
+- `y` `s` - `CMD MODE` - To start the surround functionality which can be used with motions.
+- `c` `s` = `CMD MODE` - To change already surrounded word with different char.
 
-`y` `s` - `CMD MODE` - To start the surround functionality which can be used with motions
-`c` `s` = `CMD MODE` - To change already surrounded word with different char
-
-`space` `h` `b` = `CMD MODE` - To view git blame
-`space` `h` `b` = `CMD MODE` - To view git blame inline
+*Git*
+- `space` `h` `b` = `CMD MODE` - To view git blame.
+- `space` `h` `b` = `CMD MODE` - To view git blame inline.
 
 ## Screenshots
 
