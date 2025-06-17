@@ -8,7 +8,7 @@ This repository uses all the terminal, code editor, extensions, etc., setup for 
 
 Using `zsh` and [Wezterm](https://wezterm.org/) as my terminal. Follow the steps to setup up a terminal that looks like the below attached screen shot of my terminal.
 
-![alt text](image-2.png)
+![alt text](wezterm.png)
 
 #### Check or Set default terminal
 
