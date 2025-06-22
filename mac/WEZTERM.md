@@ -23,6 +23,7 @@ chsh -s /bin/zsh
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
 If necessary, when prompted, enter your password here and press enter. If you haven’t installed the XCode Command Line Tools, when prompted, press enter and homebrew will install this as well.
 
 ## Add To Path (Only Apple Silicon Mac)
@@ -108,6 +109,7 @@ return config
 
 ## Choose a colorscheme
 
+<!-- markdownlint-disable MD059 -->
 Take a look at the available colorschemes [here](https://wezterm.org/colorschemes/index.html)
 
 Once you find one you like, you can select a colorscheme for wezterm like so (the highlighted line below):
@@ -134,15 +136,15 @@ config.macos_window_background_blur = 10
 
 -- my coolnight colorscheme:
 config.colors = {
-	foreground = "#CBE0F0",
-	background = "#011423",
-	cursor_bg = "#47FF9C",
-	cursor_border = "#47FF9C",
-	cursor_fg = "#011423",
-	selection_bg = "#033259",
-	selection_fg = "#CBE0F0",
-	ansi = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7" },
-	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
+ foreground = "#CBE0F0",
+ background = "#011423",
+ cursor_bg = "#47FF9C",
+ cursor_border = "#47FF9C",
+ cursor_fg = "#011423",
+ selection_bg = "#033259",
+ selection_fg = "#CBE0F0",
+ ansi = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7" },
+ brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
 }
 
 -- and finally, return the configuration to wezterm
@@ -345,4 +347,3 @@ source ~/.zshrc
 ```
 
 Now you can use `z` as a much smarter replacement to `cd`.
-

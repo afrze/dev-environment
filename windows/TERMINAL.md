@@ -2,13 +2,13 @@
 
 ## To add new color schemes
 
-Use [windows terminal themes](https://windowsterminalthemes.dev/), I use a theme called [purplepeter](/windows/purplepeter.json). Add this to your color schemes and select it. 
+Use [windows terminal themes](https://windowsterminalthemes.dev/), I use a theme called [purplepeter](/windows/purplepeter.json). Add this to your color schemes and select it.
 
 ## Download and Install Fonts
 
 I use [Fira Code](https://github.com/ryanoasis/nerd-fonts/releases), download an install it. And in windows terminal settings > appearance change to installed font.
 
-## Install and setup Oh-My-Posh 
+## Install and setup Oh-My-Posh
 
 Make sure you have `winget`, if not install `winget`
 
@@ -63,7 +63,7 @@ In case of eny error, if `$PROFILE` does not exists, run this
 New-Item -Path $PROFILE -Type File -Force
 ```
 
-Inside the opened notepad file, paste this expression and save. 
+Inside the opened notepad file, paste this expression and save.
 
 ```bash
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\capr4n.omp.json" | Invoke-Expression
