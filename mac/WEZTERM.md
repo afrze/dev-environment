@@ -192,7 +192,7 @@ If you’re using the rainbow version of powerlevel10k, I recommend you change t
 Open `~/.p10k.zsh` with your editor of choice. With Neovim it would be:
 
 ```bash
-nvim ~/.p10k.zsh
+open -a TextEdit ~/.p10k.zsh
 ```
 
 And then look for `POWERLEVEL9K_DIR_BACKGROUND` and change the color from 4 to 0 like so:
